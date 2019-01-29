@@ -14,14 +14,17 @@
 */
 
 /* VideoPlayer Styles */
-
+/* The style is for the video clip and the rule makes the video render as a block element takes up 90% of the width, and the margin makes the video horizontally centered. */
 video {
     display: block;
     width: 90%;
     margin: 5px auto 5px auto;
 }
 
+/* The media rule is for all devices with min pixels of 521 pixels. */
 @media only screen and (min-width: 521px) {
+
+    /* The rule is for the video only on devices of 521 pixels and the video will be 360px, the video will be floated to the right, and the margin of the video will be 10 pixels. */
     video {
         width: 360px;
         float: right;
@@ -30,6 +33,7 @@ video {
 }
 
 /* Track Styles */
+/* The rule is for the captions on the video and the style is going to make the background color white, the text will have a color of rgb(221, 128, 160) and the font will be increased and will be changed to serif font. */
 ::cue {
     background-color: rgba(255, 255, 255, 0.8);
     color: rgb(221, 128, 160);
